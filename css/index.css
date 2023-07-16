@@ -1,4 +1,10 @@
-body 
+.first_paragraph
+{
+    font-size: large;
+    color: green;
+}
+
+body
 {
     background-color: black;
 }
