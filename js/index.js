@@ -6,24 +6,36 @@ const messages = [
 ];
 
 let currentMessageIndex = -1;
+let currentCharacterIndex = 0;
+let typingSpeed = 50; // Adjust typing speed (in milliseconds) here
+
+let cursorTimeout;
 
 document.addEventListener("keypress", handleKeyPress);
 
 function handleKeyPress(event) {
   if (event.key === "Enter" || event.keyCode === 13) {
+    clearTimeout(cursorTimeout);
+
     currentMessageIndex++;
     if (currentMessageIndex >= messages.length) {
       currentMessageIndex = 0; // Restart the messages loop
     }
 
-    const output = document.getElementById("output");
-    const message = messages[currentMessageIndex];
-
-    const newMessageElement = document.createElement("div");
-    newMessageElement.className = "message";
-    newMessageElement.textContent = message;
-
-    output.appendChild(newMessageElement);
-    output.scrollTop = output.scrollHeight;
+    currentCharacterIndex = 0;
+    printMessage();
   }
 }
+
+function printMessage() {
+  const output = document.getElementById("output");
+  const message = messages[currentMessageIndex];
+
+  output.innerHTML = message.substring(0, currentCharacterIndex) + "<span class='cursor'>|</span>";
+
+  if (currentCharacterIndex < message.length) {
+    currentCharacterIndex++;
+    cursorTimeout = setTimeout(printMessage, typingSpeed);
+  }
+}
+
