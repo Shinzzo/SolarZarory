@@ -1,23 +1,20 @@
-#output {
-    font-family: monospace;
-    white-space: pre;
-    overflow: hidden;
-    width: 300px;
-    height: 100px;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
+#output 
+{
+  font-family: monospace;
+  white-space: pre;
+  overflow: hidden;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
   
-  .cursor {
-    animation: blinkCursor 0.7s infinite;
-  }
-  
-  @keyframes blinkCursor {
-    from, to {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
+.cursor 
+{animation: blinkCursor 0.7s infinite;}
+
+@keyframes blinkCursor 
+{
+  from, to {opacity: 0;}
+       50% {opacity: 1;}
+}
   
