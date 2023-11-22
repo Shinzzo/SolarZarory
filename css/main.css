@@ -28,9 +28,9 @@
 
 .avatar {
   background: rgba(239, 137, 233, 0.35) url('/images/400x400cc.png');
+  border-radius: 0.075in;
     background-size: auto;
   background-size: cover;
-  border-style: ridge;
   box-shadow: 0 0.2mm 1.0mm rgba(0, 0, 0, 0.5);
   margin: 0.2mm;
   padding: 0.2mm;
@@ -42,9 +42,9 @@
 }
 
 body {
-  background: #a4a4a4 url('/images/Tokyo.png') no-repeat center fixed;
+  background: #a4a4a4 url('/images/BlueHost_com.jpg') no-repeat center fixed;
   background-image: linear-gradient(-20deg, #144fb9, #4d82e6);
-  background: #144fb9 url('meltybg1.jpg') no-repeat center fixed;
+  background: #144fb9 url('/images/BlueHost_com.jpg') no-repeat center fixed;
     background-size: auto;
   background-size: cover;
   font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
