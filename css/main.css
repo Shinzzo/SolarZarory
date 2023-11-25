@@ -1,34 +1,44 @@
-.main-div {
-  width: 94%;
-  margin-left: 1%;
-  margin-top: 0.2in;
-  padding: 0.5em;
+body {
+  /*background: #a4a4a4 url('https://notkyon.moe/yuyuko-bg7.jpg') no-repeat center fixed;*/
+  /*background-image: linear-gradient(-20deg, #144fb9, #4d82e6);*/
+  background: #144fb9 url('/images/BlueHost_com.jpg') no-repeat center fixed;
+  background-size: cover;
+  font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
 }
 
 .card {
-  position: absolute;
+  /*position: absolute;*/
   background: rgba(53, 57, 63, 0.70);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 0.075in;
   box-shadow: 0 0.2mm 1.0mm rgba(0, 0, 0, 0.5);
-  padding: 0.09in;
+  padding: 0.2in;
   margin: 0.2in;
-    margin-top: 0.2in;
-    margin-left: 0.4in;
+  color: rgba(220,221,222, 1.0);
 }
 
-.rows {
-  display: flex;
-  flex-flow: row;
-    flex-wrap: nowrap;
-  flex-wrap: wrap;
+@media screen and (orientation:portrait) {
+  .main-div {
+      width: 94%;
+      margin-left: 1%;
+      margin-top: 0.2in;
+      padding: 0.5em;
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .main-div {
+      width: 62%;
+      margin-left: 19%;
+      margin-top: 0.2in;
+      padding: 0.5em;
+  }
 }
 
 .avatar {
   background: rgba(239, 137, 233, 0.35) url('/images/400x400cc.png');
-  border-radius: 0.075in;
-    background-size: auto;
   background-size: cover;
   box-shadow: 0 0.2mm 1.0mm rgba(0, 0, 0, 0.5);
   margin: 0.2mm;
@@ -38,14 +48,11 @@
   min-width: 128px;
   min-height: 128px;
   align-self: left;
+  border-radius: 0.075in;
 }
 
-body {
-  background: #a4a4a4 url('/images/BlueHost_com.jpg') no-repeat center fixed;
-  background-image: linear-gradient(-20deg, #144fb9, #4d82e6);
-  background: #144fb9 url('/images/BlueHost_com.jpg') no-repeat center fixed;
-    background-size: auto;
-  background-size: cover;
-  font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1em;
+.rows {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
