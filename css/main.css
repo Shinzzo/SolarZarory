@@ -14,7 +14,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   border-radius: 0.075in;
   box-shadow: 0 0.2mm 1.0mm rgba(0, 0, 0, 0.5);
-  padding: 0.2in;
+  padding: 0.1in;
   margin: 0.2in;
   color: rgba(220,221,222, 1.0);
 }
