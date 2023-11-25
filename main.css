@@ -1,5 +1,5 @@
 body {
-  background: #144fb9 url('/images/BlueHost_com.jpg') no-repeat center fixed;
+  background: #144fb9 url('/BlueHost_com.jpg') no-repeat center fixed;
   background-size: cover;
   font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -34,7 +34,7 @@ body {
 }
 
 .avatar {
-  background: rgba(239, 137, 233, 0.35) url('/images/400x400cc.png');
+  background: rgba(239, 137, 233, 0.35) url('/400x400cc.png');
   background-size: cover;
   box-shadow: 0 0.2mm 1.0mm rgba(0, 0, 0, 0.5);
   margin: 0.2mm;
